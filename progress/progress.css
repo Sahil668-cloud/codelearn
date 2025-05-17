@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px #333;
+    animation: up-down 0.5s linear 1;
+}
+
+.progress-card {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    margin-bottom: 2rem;
+    animation: up-down 0.9s linear 1;
+    transition: transform 0.3s;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(23px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.progress-card:hover {
+    transform: translateY(-5px);
+}
+
+.progress-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #0161cf;
+    width: 0%;
+    transition: width 1s ease;
+    border-radius: 10px;
+}
+
+.progress-percent {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .progress-title {
+        font-size: 1rem;
+    }
+}
+
+.home-btn {
+    display: inline-block;
+    background-color: #0161cf;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(1, 97, 207, 0.3);
+    transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #004fa3;
+}

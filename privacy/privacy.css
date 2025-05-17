@@ -1,0 +1,142 @@
+/* === GENERAL === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+a {
+    color: #0161cf;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* === SECTION STYLING === */
+.policy-section {
+    background-color: #000;
+    padding: 3rem 1rem;
+}
+
+.policy-box {
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.policy-box:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+}
+
+/* === HEADINGS === */
+.policy-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.policy-box h3 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* === TEXT & LISTS === */
+.policy-box p,
+.policy-box li {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.policy-box ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.policy-box li {
+    margin-bottom: 0.5rem;
+}
+
+/* === FOOTER / CTA (optional) === */
+.policy-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.policy-footer a.button {
+    display: inline-block;
+    background-color: #0161cf;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(1, 97, 207, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.policy-footer a.button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .policy-box {
+        padding: 1.5rem;
+    }
+
+    .policy-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .policy-box h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .policy-box {
+        padding: 1rem;
+    }
+
+    .policy-box h2 {
+        font-size: 1.4rem;
+    }
+
+    .policy-box p,
+    .policy-box li {
+        font-size: 0.95rem;
+    }
+}
+
+.home-btn {
+    display: inline-block;
+    background-color: #0161cf;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(1, 97, 207, 0.3);
+    transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #004fa3;
+}

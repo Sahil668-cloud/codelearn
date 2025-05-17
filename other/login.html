@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            /* height: 100%; */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* overflow: hidden; */
+            /* Prevent scroll */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .login-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .login-form {
+            background-color: #111;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #222;
+            color: #fff;
+        }
+
+        input:focus {
+            outline: 2px solid #0161cf;
+        }
+
+        button {
+            width: 100%;
+            background-color: #0161cf;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .login-form {
+                padding: 1.5rem;
+            }
+
+            .login-form h2 {
+                font-size: 1.5rem;
+            }
+        }
+        .signup {
+            text-align: center;
+            margin-bottom: 1rem;
+            text-decoration: none;
+        }
+        .signup a {
+            color: #0161cf;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <form class="login-form">
+            <h2>Login</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+            <div class="signup">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

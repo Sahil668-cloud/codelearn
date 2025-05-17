@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice</title>
+    <link rel="stylesheet" href="js-practice.css" />
+  </head>
+  <body>
+    <a href="/codelearn/practice/practice.html" class="home-btn">Back</a>
+    <h1 class="title">HTML Practice - 32 Levels</h1>
+
+    <div class="levels-grid" id="levelsGrid"></div>
+
+    <div class="practice-interface hidden" id="practiceInterface">
+      <h2 id="levelTitle">Level 1</h2>
+      <p id="levelDescription">
+        Welcome to Level 1. Learn the basics of HTML tags.
+      </p>
+
+      <div class="buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <div id="customAlert" class="custom-alert hidden">
+      <p id="alertMessage">Alert message</p>
+      <button onclick="hideAlert()">OK</button>
+    </div>
+
+    <script src="js-practice.js"></script>
+  </body>
+</html>

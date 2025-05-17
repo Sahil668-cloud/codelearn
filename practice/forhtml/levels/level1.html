@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to the First level of This Html & CSS Course</h1>
+    <p>In this level, you will learn the basics of HTML</p>
+    <div class="practice">
+      <h2>About Html</h2>
+      <ul>
+        <li>
+          <strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>. It is the standard markup
+          language for creating
+          web pages.
+        </li>
+        <li>
+          HTML elements are the building blocks of HTML pages. They are represented by tags, which are enclosed in
+          angle brackets.
+        </li>
+        <li>
+          HTML documents are structured in a hierarchical manner, with a root element that contains all other elements.
+        </li>
+        <li>
+          HTML elements can have attributes that provide additional information about the element. Attributes are
+          specified in the opening tag of an element.
+        </li>
+        <li>
+          HTML supports various types of content, including text, images, links, lists, tables, and forms.
+        </li>
+        <li>
+          HTML is often used in conjunction with <strong>CSS</strong> (<i>Cascading Style Sheets</i>) to control the presentation and layout
+          of web pages.
+        </li>
+      </ul>
+      <div class="btn">
+        <button id="nextButton">Next Level</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    let level = 1;
+    const nextButton = document.getElementById('nextButton');
+    nextButton.addEventListener('click', () => {
+      window.location.href = `level${level + 1}.html`;
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeLearn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <header class="navbar">
+                <div class="logo">🌟CodeLearn</div>
+
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="practice/practice.html">Practice</a>
+                    <a href="other/about.html">About</a>
+                    <a href="other/contact.html">Contact Us</a>
+                </nav>
+
+                <div class="auth-buttons desktop-only">
+                    <button class="login" id="login">Login</button>
+                    <button class="signup" id="signup">Sign Up</button>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+
+            <!-- Slide-in mobile navbar -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="practice/practice.html">Practice</a>
+                    <a href="other/about.html">About</a>
+                    <a href="other/contact.html">Contact Us</a>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="login" id="loginPhone">Login</button>
+                    <button class="signup" id="signupPhone">Sign Up</button>
+                </div>
+            </div>
+
+            <!-- display content -->
+            <div class="front">
+                <span class="content">
+                    <span>
+                        <h2>Start Your Coding</h2>
+                        <h2>Journey Now!!</h2>
+                        <p>Practice real code, build projects, and test your skills.</p>
+                    </span>
+                    <a href="practice/practice.html">Start Now</a>
+                </span>
+                <!-- <div class="ring">
+                    <div class="base"></div>
+                </div> -->
+            </div>
+        </div>
+        <section class="cards">
+            <div class="code-learn item">
+                <img src="images/code practice.png" alt="
+                Code Practice" loading="lazy" />
+                <h3>Code Practice</h3>
+                <p>Practice coding with real-world problems and challenges.</p>
+                <a href="practice/practice.html">Practice</a>
+            </div>
+            <div class="projects item">
+                <img src="images/projects.png" loading="lazy" alt="Projects" />
+                <h3>Projects</h3>
+                <p>Build projects to enhance your coding skills.</p>
+                <a href="projects/projects.html">Projects</a>
+            </div>
+            <div class="quizzes item">
+                <img src="images/quizzes.png" alt="Quizzes" loading="lazy" />
+                <h3>Quizzes</h3>
+                <p>Test your knowledge with quizzes and challenges.</p>
+                <a href="quizzes/quizzes.html">Quizzes</a>
+            </div>
+            <div class="progress item">
+                <img src="images/progress.png" alt="Progress" loading="lazy" />
+                <h3>Progress</h3>
+                <p>Track your progress and improve your skills.</p>
+                <a href="progress/progress.html">Progress</a>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <h2>How You Can Learn?</h2>
+            <div class="how-steps">
+                <div class="how-step step">
+                    <img src="images/sign up.png" alt="Sign Up"  loading="lazy">
+                    <h3>1. Sign Up</h3>
+                    <p>Create your free account to access learning tools and track progress.</p>
+                </div>
+                <div class="how-step step">
+                    <img src="images/learn.png" alt="Learn" loading="lazy">
+                    <h3>2. Learn</h3>
+                    <p>Start learning HTML, CSS, JavaScript with structured lessons and levels.</p>
+                </div>
+                <div class="how-step step">
+                    <img src="images/practice.png" alt="Practice" loading="lazy">
+                    <h3>3. Practice</h3>
+                    <p>Solve real problems with live code editors to improve your skills.</p>
+                </div>
+                <div class="how-step step">
+                    <img src="images/build projects.png" alt="Build Projects">
+                    <h3>4. Build Projects</h3>
+                    <p>Apply your knowledge in real-world mini-projects to build experience.</p>
+                </div>
+                <div class="how-step step">
+                    <img src="images/quizzes.png?" alt="Take Quizzes" loading="lazy">
+                    <h3>5. Take Quizzes</h3>
+                    <p>Test your knowledge with fun, interactive quizzes at every level.</p>
+                </div>
+            </div>
+            <a href="practice/practice.html" class="start">Start Now</a>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo" id="logo">🌟CodeLearn</div>
+                <div class="footer-links">
+                    <a href="privacy/privacy.html">Privacy Policy</a>
+                    <a href="terms/terms&service.html">Terms of Service</a>
+                    <a href="other/contact.html">Contact Us</a>
+                </div>
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
